@@ -5,13 +5,33 @@ html {
 	margin:0;
 }
 
+body{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	min-height: 100vh;
+	background: sandybrown;
+}
+
+.container {
+	max-width: 1200px;
+}
+
 .container, .slideshow {
+	font-size: 0px;
 	white-space: nowrap;
+	cursor: pointer;
 }
 
 .slideshow img{
 	height: 340px;
 	width:calc(100% / 3);
-	object-fit: cover;;
+	object-fit: cover;
+	margin-left:16px;
+	
+}
+
+.slideshow img:first-child{
+	margin-left: 0px;
 }
 
