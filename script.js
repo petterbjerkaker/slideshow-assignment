@@ -3,7 +3,7 @@ firstImg = slideshow.querySelectorAll("img")[0];
 angleIcons = document.querySelectorAll(".container i");
 
 
-let firstImgWidth = firstImg.clientWidth + 10;
+let firstImgWidth = firstImg.clientWidth + 16;
 
 angleIcons.forEach(icon => {
 	icon.addEventListener("click", ()=>{
@@ -26,14 +26,16 @@ const dragStart = (e)=> {
 const dragging = (e)=>	{
 	if(!isDragStart) return;
 	e.preventDefault();
+	slideshow.classList.add("dragging");
 	let positionDiff = e.pageX - prevPageX;
 	slideshow.scrollLeft = prevScrollLeft - positionDiff;
 }
 
 const dragStop = ()=>{
 	isDragStart = false;
+	slideshow.classList.remove("dragging");
 }
 
-slideshow.addEventListener("mousedown", dragStart);
 slideshow.addEventListener("mousemove", dragging);
+slideshow.addEventListener("mousedown", dragStart);
 slideshow.addEventListener("mouseup", dragStop);
