@@ -11,16 +11,29 @@ body{
 	justify-content:center;
 	min-height: 100vh;
 	background: sandybrown;
+	padding: 0 10px;
 }
 
 .container {
 	max-width: 1200px;
 }
 
+.container i{
+	background: #fff;
+	font-size:48px;
+	color:red;
+	height:46px;
+	width:46px;
+	line-height: 46px;
+	text-align:center;
+
+}
+
 .container, .slideshow {
 	font-size: 0px;
 	white-space: nowrap;
 	cursor: pointer;
+	overflow: hidden;
 }
 
 .slideshow img{
