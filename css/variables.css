@@ -1,0 +1,24 @@
+:root {
+
+
+	--color-primary: white;
+	--color-secondary:black;
+
+	--font-family-primary: 'Inter';
+	--font-family-secondary: 'Times New Roman';
+
+
+	--font-size-base: 40px;
+	--font-size-small: 1rem;
+	--font-size-medium: 1rem;
+	--font-size-large: 1rem;
+
+	--font-leading-base: 1rem;
+	--font-leading-small: 1rem;
+	--font-leading-medium: 1rem;
+	--font-leading-large: 1rem;
+
+	--spacing-small: var(--font-leading-base);
+	--spacing-medium: 2rem;
+	--spacing-large: 4rem;
+}
