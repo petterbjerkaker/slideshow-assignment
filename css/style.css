@@ -46,6 +46,7 @@ body{
 	white-space: nowrap;
 	cursor: pointer;
 	overflow: hidden;
+	scroll-behavior: auto;
 }
 
 .slideshow img{
