@@ -37,6 +37,9 @@ let firstImgWidth = firstImg.clientWidth + 16;
 let scrollWidth = slideshow.scrollWidth - slideshow.clientWidth;
 
 const autoSlide = ()=>{
+	if(slideshow.scrollLeft == (slideshow.scrollWidth - slideshow.clientWidth)) return;
+
+
 	positionDiff = Math.abs(positionDiff);
 	let firstImgWidth = firstImg.clientWidth + 16;
 	let valDifference = firstImgWidth - positionDiff;
@@ -53,11 +56,7 @@ const autoSlide = ()=>{
 	}
 	slideshow.scrollLeft -= positionDiff > firstImgWidth / 2 ? valDifference : -positionDiff;
 
-	
-	if(slideshow.scrollLeft > prevScrollLeft){
-		return slideshow.scrollLeft += positionDiff > firstImgWidth / 1 ? valDifference : -positionDiff;
-	}
-	slideshow.scrollLeft -= positionDiff > firstImgWidth / 1 ? valDifference : -positionDiff;
+
 }
 
 
