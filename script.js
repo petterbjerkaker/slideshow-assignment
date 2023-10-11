@@ -40,7 +40,16 @@ const autoSlide = ()=>{
 	positionDiff = Math.abs(positionDiff);
 	let firstImgWidth = firstImg.clientWidth + 16;
 	let valDifference = firstImgWidth - positionDiff;
+
+	if(positionDiff > firstImgWidth / 3) {
+		slideshow.scrollLeft += valDifference;
+	}else{
+		slideshow.scrollLeft -= positionDiff;
+	}
+
+	slideshow.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 }
+
 
 const dragStart = (e)=> {
 	isDragStart = true;
