@@ -38,6 +38,8 @@ let scrollWidth = slideshow.scrollWidth - slideshow.clientWidth;
 
 const autoSlide = ()=>{
 	positionDiff = Math.abs(positionDiff);
+	let firstImgWidth = firstImg.clientWidth + 16;
+	let valDifference = firstImgWidth - positionDiff;
 }
 
 const dragStart = (e)=> {
