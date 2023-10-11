@@ -38,7 +38,7 @@ let scrollWidth = slideshow.scrollWidth - slideshow.clientWidth;
 
 const dragStart = (e)=> {
 	isDragStart = true;
-	prevPageX = e.pageX;
+	prevPageX = e.pageX || e.touched[0].pageX;
 	prevScrollLeft = slideshow.scrollLeft;
 }
 
@@ -57,5 +57,12 @@ const dragStop = ()=>{
 }
 
 slideshow.addEventListener("mousemove", dragging);
+slideshow.addEventListener("touchmove", dragging);
+
 slideshow.addEventListener("mousedown", dragStart);
+slideshow.addEventListener("touchstart", dragStart);
+
 slideshow.addEventListener("mouseup", dragStop);
+slideshow.addEventListener("touchend", dragStop);
+
+
