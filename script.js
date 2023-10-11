@@ -48,6 +48,7 @@ const dragging = (e)=>	{
 	slideshow.classList.add("dragging");
 	let positionDiff = e.pageX - prevPageX;
 	slideshow.scrollLeft = prevScrollLeft - positionDiff;
+	showHideIcons();
 }
 
 const dragStop = ()=>{
