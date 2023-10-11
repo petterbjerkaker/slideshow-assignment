@@ -32,7 +32,7 @@ angleIcons.forEach(icon => {
 	});
 });
 
-let isDragStart = false, prevPageX, prevScrollLeft, positionDiff;
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 let firstImgWidth = firstImg.clientWidth + 16;
 let scrollWidth = slideshow.scrollWidth - slideshow.clientWidth;
 
@@ -69,6 +69,7 @@ const dragStart = (e)=> {
 const dragging = (e)=>	{
 	if(!isDragStart) return;
 	e.preventDefault();
+	isDragging = true;
 	slideshow.classList.add("dragging");
 	positionDiff = (e.pageX || e.touches[0].pageX)- prevPageX;
 	slideshow.scrollLeft = prevScrollLeft - positionDiff;
@@ -78,6 +79,9 @@ const dragging = (e)=>	{
 const dragStop = ()=>{
 	isDragStart = false;
 	slideshow.classList.remove("dragging");
+
+	if(!isDragging) return;
+	isDragging = false;
 	autoSlide();
 }
 
