@@ -32,13 +32,17 @@ angleIcons.forEach(icon => {
 	});
 });
 
-let isDragStart = false, prevPageX, prevScrollLeft;
+let isDragStart = false, prevPageX, prevScrollLeft, positionDiff;
 let firstImgWidth = firstImg.clientWidth + 16;
 let scrollWidth = slideshow.scrollWidth - slideshow.clientWidth;
 
+const autoSlide = ()=>{
+	positionDiff = Math.abs(positionDiff);
+}
+
 const dragStart = (e)=> {
 	isDragStart = true;
-	prevPageX = e.pageX || e.touched[0].pageX;
+	prevPageX = e.pageX || e.touches[0].pageX;
 	prevScrollLeft = slideshow.scrollLeft;
 }
 
@@ -46,7 +50,7 @@ const dragging = (e)=>	{
 	if(!isDragStart) return;
 	e.preventDefault();
 	slideshow.classList.add("dragging");
-	let positionDiff = e.pageX - prevPageX;
+	positionDiff = (e.pageX || e.touches[0].pageX)- prevPageX;
 	slideshow.scrollLeft = prevScrollLeft - positionDiff;
 	showHideIcons();
 }
@@ -54,6 +58,7 @@ const dragging = (e)=>	{
 const dragStop = ()=>{
 	isDragStart = false;
 	slideshow.classList.remove("dragging");
+	autoSlide();
 }
 
 slideshow.addEventListener("mousemove", dragging);
