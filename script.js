@@ -41,13 +41,19 @@ const autoSlide = ()=>{
 	let firstImgWidth = firstImg.clientWidth + 16;
 	let valDifference = firstImgWidth - positionDiff;
 
-	if(positionDiff > firstImgWidth / 3) {
+	if(slideshow.scrollLeft > prevScrollLeft){
+		return slideshow.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+	}
+
+	slideshow.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+
+	if(positionDiff > firstImgWidth / 2) {
 		slideshow.scrollLeft += valDifference;
 	}else{
 		slideshow.scrollLeft -= positionDiff;
 	}
 
-	slideshow.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+	slideshow.scrollLeft -= positionDiff > firstImgWidth / 2 ? valDifference : -positionDiff;
 }
 
 
