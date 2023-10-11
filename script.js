@@ -44,16 +44,20 @@ const autoSlide = ()=>{
 	if(slideshow.scrollLeft > prevScrollLeft){
 		return slideshow.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 	}
-
 	slideshow.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 
-	if(positionDiff > firstImgWidth / 2) {
-		slideshow.scrollLeft += valDifference;
-	}else{
-		slideshow.scrollLeft -= positionDiff;
-	}
 
+
+	if(slideshow.scrollLeft > prevScrollLeft){
+		return slideshow.scrollLeft += positionDiff > firstImgWidth / 2 ? valDifference : -positionDiff;
+	}
 	slideshow.scrollLeft -= positionDiff > firstImgWidth / 2 ? valDifference : -positionDiff;
+
+	
+	if(slideshow.scrollLeft > prevScrollLeft){
+		return slideshow.scrollLeft += positionDiff > firstImgWidth / 1 ? valDifference : -positionDiff;
+	}
+	slideshow.scrollLeft -= positionDiff > firstImgWidth / 1 ? valDifference : -positionDiff;
 }
 
 
