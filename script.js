@@ -3,13 +3,18 @@ firstImg = slideshow.querySelectorAll("img")[0];
 angleIcons = document.querySelectorAll(".container i");
 
 
-let firstImgWidth = firstImg.clientWidth + 16;
 
 const showHideIcons = ()=>{
 	if(slideshow.scrollLeft === 0){
 		angleIcons[0].style.display = "none";
 	}else{
 		angleIcons[0].style.display = "block";
+	}
+	
+	if(slideshow.scrollLeft === scrollWidth){
+		angleIcons[1].style.display = "none";
+	}else{
+		angleIcons[1].style.display = "block";
 	}
 }
 
@@ -23,11 +28,13 @@ angleIcons.forEach(icon => {
 		}
 		setTimeout(() => {
 			showHideIcons();
-		}, 60);
+		}, 50);
 	});
 });
 
 let isDragStart = false, prevPageX, prevScrollLeft;
+let firstImgWidth = firstImg.clientWidth + 16;
+let scrollWidth = slideshow.scrollWidth - slideshow.clientWidth;
 
 const dragStart = (e)=> {
 	isDragStart = true;
