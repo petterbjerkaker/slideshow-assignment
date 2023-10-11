@@ -5,6 +5,15 @@ angleIcons = document.querySelectorAll(".container i");
 
 let firstImgWidth = firstImg.clientWidth + 16;
 
+const showHideIcons = ()=>{
+	if(slideshow.scrollLeft === 0){
+		angleIcons[0].style.display = "none";
+	}else{
+		angleIcons[0].style.display = "block";
+	}
+}
+
+
 angleIcons.forEach(icon => {
 	icon.addEventListener("click", ()=>{
 		if(icon.id == "left") {
@@ -12,6 +21,9 @@ angleIcons.forEach(icon => {
 		}else {
 			slideshow.scrollLeft += firstImgWidth;
 		}
+		setTimeout(() => {
+			showHideIcons();
+		}, 60);
 	});
 });
 
