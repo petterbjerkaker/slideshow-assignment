@@ -60,13 +60,13 @@ const autoSlide = ()=>{
 }
 
 
-const dragStart = (e)=> {
+const dragStart = (event)=> {
 	isDragStart = true;
 	prevPageX = e.pageX || e.touches[0].pageX;
 	prevScrollLeft = slideshow.scrollLeft;
 }
 
-const dragging = (e)=>	{
+const dragging = (event)=>	{
 	if(!isDragStart) return;
 	e.preventDefault();
 	isDragging = true;
