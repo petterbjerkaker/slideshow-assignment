@@ -118,7 +118,7 @@ body{
 .slide-content{
 	display:flex;
 	width:2048px;
-	background-color:lightcoral;
+	background: snow;
 }
 
 .slide-1-text{
@@ -128,7 +128,7 @@ body{
 	color:black;
 	justify-content: center;
 	align-items:center;
-	background-color:white;
+	background: snow;
 	width:400px;
 	padding:5px;
 	border-radius:5px;
@@ -141,7 +141,7 @@ body{
 	color:black;
 	justify-content: center;
 	align-items:center;
-	background-color:white;
+	background: snow;
 	width:400px;
 	padding:5px;
 	padding-left:20px;
@@ -155,7 +155,7 @@ body{
 	color:black;
 	justify-content: center;
 	align-items:center;
-	background-color:white;
+	background: snow;
 	width:400px;
 	padding:5px;
 	padding-left:40px;
@@ -169,7 +169,7 @@ body{
 	color:black;
 	justify-content: center;
 	align-items:center;
-	background-color:white;
+	background: snow;
 	width:400px;
 	padding:5px;
 	padding-left:60px;
@@ -184,7 +184,7 @@ body{
 	color:black;
 	justify-content: center;
 	align-items:center;
-	background-color:white;
+	background: snow;
 	width:400px;
 	padding:5px;
 	padding-left:80px;
@@ -228,6 +228,77 @@ body{
 	.slide-content{
 		display:flex;
 		width:2114px;
-		background-color:lightcoral;
+		background: snow;
 	}
+
+	.slide-1-text{
+		display:flex;
+		font-size:20px;
+		font-family: "inter";
+		color:black;
+		justify-content: center;
+		align-items:center;
+		background: snow;
+		width:400px;
+		padding:5px;
+		border-radius:5px;
+	}
+	
+	.slide-2-text{
+		display:flex;
+		font-size:20px;
+		font-family: "inter";
+		color:black;
+		justify-content: center;
+		align-items:center;
+		background: snow;
+		width:400px;
+		padding:5px;
+		padding-left:20px;
+		border-radius:5px;
+	}
+	
+	.slide-3-text{
+		display:flex;
+		font-size:20px;
+		font-family: "inter";
+		color:black;
+		justify-content: center;
+		align-items:center;
+		background: snow;
+		width:400px;
+		padding:5px;
+		padding-left:40px;
+		border-radius:5px;
+	}
+	
+	.slide-4-text{
+		display:flex;
+		font-size:20px;
+		font-family: "inter";
+		color:black;
+		justify-content: center;
+		align-items:center;
+		background: snow;
+		width:400px;
+		padding:5px;
+		padding-left:60px;
+		border-radius:5px;
+	}
+	
+	
+	.slide-5-text{
+		display:flex;
+		font-size:20px;
+		font-family: "inter";
+		color:black;
+		justify-content: center;
+		align-items:center;
+		background: snow;
+		width:400px;
+		padding:5px;
+		padding-left:80px;
+		border-radius:5px;
+	}
+	
 }
