@@ -83,7 +83,6 @@ body{
 }
 
 
-
 .slideshow img:first-child{
 	margin-left: 0px;
 }
@@ -115,6 +114,91 @@ body{
 	background:lightgray;
 	
 }
+
+.slide-content{
+	display:flex;
+	width:2048px;
+	background-color:lightcoral;
+}
+
+.slide-1-text{
+	display:flex;
+	font-size:20px;
+	font-family: "inter";
+	color:black;
+	justify-content: center;
+	align-items:center;
+	background-color:white;
+	width:400px;
+	padding:5px;
+	border-radius:5px;
+}
+
+.slide-2-text{
+	display:flex;
+	font-size:20px;
+	font-family: "inter";
+	color:black;
+	justify-content: center;
+	align-items:center;
+	background-color:white;
+	width:400px;
+	padding:5px;
+	padding-left:20px;
+	border-radius:5px;
+}
+
+.slide-3-text{
+	display:flex;
+	font-size:20px;
+	font-family: "inter";
+	color:black;
+	justify-content: center;
+	align-items:center;
+	background-color:white;
+	width:400px;
+	padding:5px;
+	padding-left:40px;
+	border-radius:5px;
+}
+
+.slide-4-text{
+	display:flex;
+	font-size:20px;
+	font-family: "inter";
+	color:black;
+	justify-content: center;
+	align-items:center;
+	background-color:white;
+	width:400px;
+	padding:5px;
+	padding-left:60px;
+	border-radius:5px;
+}
+
+
+.slide-5-text{
+	display:flex;
+	font-size:20px;
+	font-family: "inter";
+	color:black;
+	justify-content: center;
+	align-items:center;
+	background-color:white;
+	width:400px;
+	padding:5px;
+	padding-left:80px;
+	border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:500px) {
 	.slideshow img{
 		width:100%;
@@ -139,5 +223,11 @@ body{
 		height: 25px;
 		
 		
+	}
+
+	.slide-content{
+		display:flex;
+		width:2114px;
+		background-color:lightcoral;
 	}
 }
