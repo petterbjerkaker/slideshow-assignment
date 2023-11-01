@@ -128,62 +128,62 @@ body{
 
 .slide-content{
 	display:flex;
-	width:2048px;
-	background: red;
+	width:6220px;
+	color:white;
 }
+
 
 .slide-1-text{
 	display:flex;
 	font-size:18px;
 	font-family: "inter";
 	color:black;
-	justify-content: center;
-	align-items:center;
-	background: snow;
 	width:400px;
 	padding:5px;
+	padding-left:175px;
 	border-radius:5px;
 }
+
 
 .slide-2-text{
 	display:flex;
 	font-size:18px;
 	font-family: "inter";
 	color:black;
-	justify-content: center;
-	align-items:center;
-	background: snow;
+	
+	
 	width:400px;
 	padding:5px;
-	padding-left:20px;
+	padding-left:140px;
 	border-radius:5px;
 }
+
 
 .slide-3-text{
 	display:flex;
 	font-size:18px;
 	font-family: "inter";
 	color:black;
-	justify-content: center;
-	align-items:center;
-	background: snow;
+
+	
 	width:400px;
 	padding:5px;
-	padding-left:40px;
+	padding-left:210px;
 	border-radius:5px;
 }
+
+
 
 .slide-4-text{
 	display:flex;
 	font-size:18px;
 	font-family: "inter";
 	color:black;
-	justify-content: center;
-	align-items:center;
-	background: snow;
+	
+	
 	width:400px;
 	padding:5px;
-	padding-left:60px;
+	padding-left:210px;
 	border-radius:5px;
 }
 
@@ -193,19 +193,151 @@ body{
 	font-size:18px;
 	font-family: "inter";
 	color:black;
-	justify-content: center;
-	align-items:center;
-	background: snow;
+	
+	
 	width:400px;
 	padding:5px;
-	padding-left:80px;
+	padding-left:230px;
+	border-radius:5px;
+}
+
+.slide-6-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+	
+	
+	width:400px;
+	padding:5px;
+	padding-left:240px;
+	border-radius:5px;
+}
+
+.slide-7-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+	
+	
+	width:400px;
+	padding:5px;
+	padding-left:240px;
+	border-radius:5px;
+}
+
+.slide-8-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+	
+	
+	width:400px;
+	padding:5px;
+	padding-left:250px;
+	border-radius:5px;
+}
+
+.slide-9-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+	
+	
+	width:400px;
+	padding:5px;
+	padding-left:245px;
+	border-radius:5px;
+}
+
+
+.slide-10-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+
+	
+	width:400px;
+	padding:5px;
+	padding-left:300px;
+	border-radius:5px;
+}
+
+
+.slide-11-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+	
+	
+	width:400px;
+	padding:5px;
+	padding-left:320px;
+	border-radius:5px;
+}
+
+.slide-12-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+	
+	
+	width:400px;
+	padding:5px;
+	padding-left:275px;
+	border-radius:5px;
+}
+
+
+
+.slide-13-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+	
+	
+	width:400px;
+	padding:5px;
+	padding-left:290px;
 	border-radius:5px;
 }
 
 
 
 
+.slide-14-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+	
+	
+	width:400px;
+	padding:5px;
+	padding-left:365px;
+	border-radius:5px;
+}
 
+
+.slide-15-text{
+	display:flex;
+	font-size:18px;
+	font-family: "inter";
+	color:black;
+
+	
+	width:400px;
+	padding:5px;
+	padding-left:395px;
+	border-radius:5px;
+}
 
 
 
@@ -242,77 +374,199 @@ body{
 
 	.slide-content{
 		display:flex;
-		width:2114px;
-		background: snow;
+		width:4650px;
+		
 	}
 
 	.slide-1-text{
 		display:flex;
-		font-size:12px;
+		font-size:18px;
 		font-family: "inter";
 		color:black;
-		justify-content: center;
-		align-items:center;
-		background: snow;
 		width:400px;
 		padding:5px;
+		padding-left:175px;
 		border-radius:5px;
 	}
 	
 	.slide-2-text{
 		display:flex;
-		font-size:12px;
+		font-size:18px;
 		font-family: "inter";
 		color:black;
-		justify-content: center;
-		align-items:center;
-		background: snow;
 		width:400px;
 		padding:5px;
-		padding-left:100px;
+		padding-left:250px;
 		border-radius:5px;
 	}
 	
 	.slide-3-text{
 		display:flex;
-		font-size:12px;
+		font-size:18px;
 		font-family: "inter";
 		color:black;
-		justify-content: center;
-		align-items:center;
-		background: snow;
 		width:400px;
 		padding:5px;
-		padding-left:300px;
+		padding-left:320px;
 		border-radius:5px;
 	}
 	
 	.slide-4-text{
 		display:flex;
-		font-size:12px;
+		font-size:18px;
 		font-family: "inter";
 		color:black;
-		justify-content: center;
-		align-items:center;
-		background: snow;
 		width:400px;
 		padding:5px;
-		padding-left:400px;
+		padding-left:350px;
 		border-radius:5px;
 	}
 	
 	
 	.slide-5-text{
 		display:flex;
-		font-size:12px;
+		font-size:18px;
 		font-family: "inter";
 		color:black;
-		justify-content: center;
-		align-items:center;
-		background: snow;
 		width:400px;
 		padding:5px;
 		padding-left:350px;
+		border-radius:5px;
+	}
+	
+	.slide-6-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+		width:400px;
+		padding:5px;
+		padding-left:370px;
+		border-radius:5px;
+	}
+	
+	.slide-7-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+		
+		
+		width:400px;
+		padding:5px;
+		padding-left:370px;
+		border-radius:5px;
+	}
+	
+	.slide-8-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+		
+		
+		width:400px;
+		padding:5px;
+		padding-left:370px;
+		border-radius:5px;
+	}
+	
+	.slide-9-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+		
+		
+		width:400px;
+		padding:5px;
+		padding-left:370px;
+		border-radius:5px;
+	}
+	
+	
+	.slide-10-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+	
+		
+		width:400px;
+		padding:5px;
+		padding-left:370px;
+		border-radius:5px;
+	}
+	
+	
+	.slide-11-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+		
+		
+		width:400px;
+		padding:5px;
+		padding-left:370px;
+		border-radius:5px;
+	}
+	
+	.slide-12-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+		
+		
+		width:400px;
+		padding:5px;
+		padding-left:320px;
+		border-radius:5px;
+	}
+	
+	
+	
+	.slide-13-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+		
+		
+		width:400px;
+		padding:5px;
+		padding-left:320px;
+		border-radius:5px;
+	}
+	
+	
+	
+	
+	.slide-14-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+		
+		
+		width:400px;
+		padding:5px;
+		padding-left:370px;
+		border-radius:5px;
+	}
+	
+	
+	.slide-15-text{
+		display:flex;
+		font-size:18px;
+		font-family: "inter";
+		color:black;
+	
+		
+		width:400px;
+		padding:5px;
+		padding-left:370px;
 		border-radius:5px;
 	}
 	
