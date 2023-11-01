@@ -17,10 +17,12 @@ body{
 .header {
 	display: flex;
 	font-size:x-large;
+	font-family:"inter" ;
 	color: black;
 	justify-content: center;
 	align-items: center;
 	padding:20px;
+	
 }
 
 .container {
@@ -127,7 +129,7 @@ body{
 .slide-content{
 	display:flex;
 	width:2048px;
-	background: snow;
+	background: red;
 }
 
 .slide-1-text{
