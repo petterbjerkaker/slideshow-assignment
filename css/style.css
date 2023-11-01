@@ -10,9 +10,10 @@ body{
 	align-items:center;
 	justify-content:center;
 	min-height: 100vh;
-	background: snow;
+	background: #5E5C5C;
 	padding: 0 35px;
 }
+
 
 .container {
 	max-width: 1200px;
@@ -60,7 +61,6 @@ body{
 
 
 
-
 .slideshow.dragging {
 	cursor:grab;
 	scroll-behavior: auto;
@@ -91,9 +91,10 @@ body{
 .navigation{
 	position:relative;
 	text-align: center;
-	padding:10px;
+	padding:0px;
 	cursor:default;
 	display: block;
+	
 }
 
 .selector{
@@ -123,7 +124,7 @@ body{
 
 .slide-1-text{
 	display:flex;
-	font-size:20px;
+	font-size:18px;
 	font-family: "inter";
 	color:black;
 	justify-content: center;
@@ -136,7 +137,7 @@ body{
 
 .slide-2-text{
 	display:flex;
-	font-size:20px;
+	font-size:18px;
 	font-family: "inter";
 	color:black;
 	justify-content: center;
@@ -150,7 +151,7 @@ body{
 
 .slide-3-text{
 	display:flex;
-	font-size:20px;
+	font-size:18px;
 	font-family: "inter";
 	color:black;
 	justify-content: center;
@@ -164,7 +165,7 @@ body{
 
 .slide-4-text{
 	display:flex;
-	font-size:20px;
+	font-size:18px;
 	font-family: "inter";
 	color:black;
 	justify-content: center;
@@ -179,7 +180,7 @@ body{
 
 .slide-5-text{
 	display:flex;
-	font-size:20px;
+	font-size:18px;
 	font-family: "inter";
 	color:black;
 	justify-content: center;
@@ -233,7 +234,7 @@ body{
 
 	.slide-1-text{
 		display:flex;
-		font-size:20px;
+		font-size:12px;
 		font-family: "inter";
 		color:black;
 		justify-content: center;
@@ -246,7 +247,7 @@ body{
 	
 	.slide-2-text{
 		display:flex;
-		font-size:20px;
+		font-size:12px;
 		font-family: "inter";
 		color:black;
 		justify-content: center;
@@ -254,13 +255,13 @@ body{
 		background: snow;
 		width:400px;
 		padding:5px;
-		padding-left:20px;
+		padding-left:100px;
 		border-radius:5px;
 	}
 	
 	.slide-3-text{
 		display:flex;
-		font-size:20px;
+		font-size:12px;
 		font-family: "inter";
 		color:black;
 		justify-content: center;
@@ -268,13 +269,13 @@ body{
 		background: snow;
 		width:400px;
 		padding:5px;
-		padding-left:40px;
+		padding-left:300px;
 		border-radius:5px;
 	}
 	
 	.slide-4-text{
 		display:flex;
-		font-size:20px;
+		font-size:12px;
 		font-family: "inter";
 		color:black;
 		justify-content: center;
@@ -282,14 +283,14 @@ body{
 		background: snow;
 		width:400px;
 		padding:5px;
-		padding-left:60px;
+		padding-left:400px;
 		border-radius:5px;
 	}
 	
 	
 	.slide-5-text{
 		display:flex;
-		font-size:20px;
+		font-size:12px;
 		font-family: "inter";
 		color:black;
 		justify-content: center;
@@ -297,7 +298,7 @@ body{
 		background: snow;
 		width:400px;
 		padding:5px;
-		padding-left:80px;
+		padding-left:350px;
 		border-radius:5px;
 	}
 	
