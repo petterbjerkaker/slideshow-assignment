@@ -1,5 +1,5 @@
 const slideshow = document.querySelector(".slideshow"),
-firstImg = slideshow.querySelectorAll("img")[0];
+firstImage = slideshow.querySelectorAll("img")[0];
 angleIcons = document.querySelectorAll(".container i");
 
 
@@ -22,9 +22,9 @@ const showHideIcons = ()=>{
 angleIcons.forEach(icon => {
 	icon.addEventListener("click", ()=>{
 		if(icon.id == "left") {
-			slideshow.scrollLeft -= firstImgWidth;
+			slideshow.scrollLeft -= firstImageWidth;
 		}else {
-			slideshow.scrollLeft += firstImgWidth;
+			slideshow.scrollLeft += firstImageWidth;
 		}
 		setTimeout(() => {
 			showHideIcons();
@@ -33,7 +33,7 @@ angleIcons.forEach(icon => {
 });
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
-let firstImgWidth = firstImg.clientWidth + 16;
+let firstImageWidth = firstImage.clientWidth + 16;
 let scrollWidth = slideshow.scrollWidth - slideshow.clientWidth;
 
 const autoSlide = ()=>{
@@ -41,37 +41,36 @@ const autoSlide = ()=>{
 
 
 	positionDiff = Math.abs(positionDiff);
-	let firstImgWidth = firstImg.clientWidth + 16;
-	let valDifference = firstImgWidth - positionDiff;
+	let firstImageWidth = firstImage.clientWidth + 16;
+	let valDifference = firstImageWidth - positionDiff;
 
 	if(slideshow.scrollLeft > prevScrollLeft){
-		return slideshow.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+		return slideshow.scrollLeft += positionDiff > firstImageWidth / 3 ? valDifference : -positionDiff;
 	}
-	slideshow.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+	slideshow.scrollLeft -= positionDiff > firstImageWidth / 3 ? valDifference : -positionDiff;
 
 
 
 	if(slideshow.scrollLeft > prevScrollLeft){
-		return slideshow.scrollLeft += positionDiff > firstImgWidth / 2 ? valDifference : -positionDiff;
+		return slideshow.scrollLeft += positionDiff > firstImageWidth / 2 ? valDifference : -positionDiff;
 	}
-	slideshow.scrollLeft -= positionDiff > firstImgWidth / 2 ? valDifference : -positionDiff;
-
+	slideshow.scrollLeft -= positionDiff > firstImageWidth / 2 ? valDifference : -positionDiff;
 
 }
 
 
 const dragStart = (event)=> {
 	isDragStart = true;
-	prevPageX = e.pageX || e.touches[0].pageX;
+	prevPageX = event.pageX || event.touches[0].pageX;
 	prevScrollLeft = slideshow.scrollLeft;
 }
 
 const dragging = (event)=>	{
 	if(!isDragStart) return;
-	e.preventDefault();
+	event.preventDefault();
 	isDragging = true;
 	slideshow.classList.add("dragging");
-	positionDiff = (e.pageX || e.touches[0].pageX)- prevPageX;
+	positionDiff = (event.pageX || event.touches[0].pageX)- prevPageX;
 	slideshow.scrollLeft = prevScrollLeft - positionDiff;
 	showHideIcons();
 }
@@ -85,6 +84,8 @@ const dragStop = ()=>{
 	autoSlide();
 }
 
+
+
 slideshow.addEventListener("mousemove", dragging);
 slideshow.addEventListener("touchmove", dragging);
 
@@ -93,5 +94,17 @@ slideshow.addEventListener("touchstart", dragStart);
 
 slideshow.addEventListener("mouseup", dragStop);
 slideshow.addEventListener("touchend", dragStop);
+
+
+document.addEventListener("keydown", function (event){
+	if (event.key === "ArrowLeft"){
+		slideshow.scrollLeft -=firstImageWidth;
+		showHideIcons();
+	} else if (event.key === "ArrowRight"){
+		slideshow.scrollLeft += firstImageWidth;
+		showHideIcons();	
+	}
+});
+
 
 
