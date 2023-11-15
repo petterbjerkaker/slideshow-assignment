@@ -51,11 +51,6 @@ const autoSlide = ()=>{
 
 
 
-	if(slideshow.scrollLeft > prevScrollLeft){
-		return slideshow.scrollLeft += positionDiff > firstImageWidth / 2 ? valDifference : -positionDiff;
-	}
-	slideshow.scrollLeft -= positionDiff > firstImageWidth / 2 ? valDifference : -positionDiff;
-
 }
 
 
