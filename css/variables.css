@@ -1,8 +1,7 @@
 :root {
-
-
 	--color-primary: white;
 	--color-secondary:black;
+	--color-tertiary:grey;
 
 	--font-family-primary: 'Inter';
 	--font-family-secondary: 'Times New Roman';
